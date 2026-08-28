@@ -1,0 +1,22 @@
+CREATE DATABASE universo_nerd
+CHARACTER SET = utf8mb4;
+
+USE universo_nerd;
+
+CREATE TABLE personagens (
+id int,
+nome VARCHAR(100) NOT NULL,
+obra_origem VARCHAR(80) NOT NULL,
+tipo_eneRgia CHAR(10) NOT NULL,
+email_criador VARCHAR(120),
+nivel_poder INT
+) DEFAULT CHARACTER SET = utf8mb4;
+
+INSERT INTO personagens
+VALUES
+('1', 'Ichigo', 'Bleach', 'reiatsu', 'titekubo','4'),
+('2', 'Goku', 'Dragonball', 'KI', 'Akiratoryiama', '5'),
+('3', 'Naruto', 'Naruto', 'Chakra', 'Kishimoto', '3'),
+('4', 'seya', 'cavaleirosdozodiaco', 'cosmo', 'naosei', '2');
+
+SELECT * FROM personagens;
